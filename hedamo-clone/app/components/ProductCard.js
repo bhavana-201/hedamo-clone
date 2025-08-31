@@ -23,13 +23,14 @@ export default function ProductCard({ title, description, imageUrl }) {
             alt={title}
             fill
             className="object-cover"
+            sizes="100vw" 
           />
         </div>
         
         {/* The Text Content */}
         <div className="p-6">
-          <h3 className="mb-2 text-xl font-bold text-gray-800">{title}</h3>
-          <p className="text-gray-600">{description}</p>
+          <h3 className="mb-2 text-xl font-bold text-black">{title}</h3>
+          <p className="text-[12px] font-medium text-black">{description}</p>
         </div>
       </motion.div>
     </Link>

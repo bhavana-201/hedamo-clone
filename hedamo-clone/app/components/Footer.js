@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Footer() {
+const currentYear = new Date().getFullYear();export default function Footer() {
   return (
     <footer className="bg-white text-[#191919]">
       {/* Top Section with Background Image */}
@@ -67,7 +67,7 @@ export default function Footer() {
       </section>
 
       <div className="border-t border-gray-200 py-6 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} Hedamo. All rights reserved.
+        © {currentYear} Hedamo. All rights reserved.
       </div>
     </footer>
   );
